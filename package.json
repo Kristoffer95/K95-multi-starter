@@ -1,0 +1,26 @@
+{
+  "name": "@k95/multi-starter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "multi-starter": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "babel index.js -d dist",
+    "build-old": "babel index.js -d dist",
+    "build-sample": "tsup src/index.ts --format cjs,esm —-dts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^10.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8"
+  }
+}
